@@ -11,6 +11,11 @@
             this.Linhas = linhas;
             this.Colunas = colunas;
             this.Pecas = new Peca[linhas, colunas];
+        }   
+
+        public Peca Peca(int linha, int coluna)
+        {
+            return Pecas[linha, coluna];
         }
 
     }
