@@ -21,7 +21,7 @@ namespace tabuleiro
         {
             return linha
                 + ", "
-                + coluna;
+                + coluna; 
         }
     }
 }
