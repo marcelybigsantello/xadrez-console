@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tabuleiro\Enums\Cor.cs" />
+    <Compile Include="tabuleiro\Exceptions\TabuleiroException.cs" />
     <Compile Include="tabuleiro\Peca.cs" />
     <Compile Include="tabuleiro\Posicao.cs" />
     <Compile Include="tabuleiro\Tabuleiro.cs" />
