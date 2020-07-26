@@ -114,7 +114,7 @@ namespace xadrez_console
                 {
                     Console.Write(peca);
                 }
-                else
+                else if (peca.Cor == Cor.Preta)
                 {
                     //Se peça é preta, vai colorir com uma cor de fundo amarelo
                     ConsoleColor aux = Console.ForegroundColor;
