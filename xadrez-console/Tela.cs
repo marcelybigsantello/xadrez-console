@@ -15,7 +15,6 @@ namespace xadrez_console
             ImprimirPecasCapturadas(partida);
             Console.WriteLine("\n\nTurno: " + partida.Turno);
            
-
             if (!partida.Terminada)
             {
                 Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
@@ -125,7 +124,6 @@ namespace xadrez_console
                 Console.Write(" ");
             }
         }
-
 
     }
 }

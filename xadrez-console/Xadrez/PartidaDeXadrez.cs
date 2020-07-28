@@ -17,7 +17,6 @@ namespace Xadrez
         public bool Xeque { get; private set; }
         public Peca VulneravelEnPassant { get; private set; }
 
-
         public PartidaDeXadrez()
         {
             this.Tab = new Tabuleiro(8, 8);
@@ -148,6 +147,7 @@ namespace Xadrez
             }
 
             Peca p = Tab.Peca(destino);
+            
             // #jogadaespecial promocao
             if (p is Peao)
             {
@@ -160,8 +160,6 @@ namespace Xadrez
                     Pecas.Add(dama);
                 }
             }
-
-
 
             if (EstaEmXeque(Adversaria(JogadorAtual)))
             {
@@ -180,10 +178,8 @@ namespace Xadrez
             {
                 Turno++;
                 MudarJogador();
-
             }
 
-            
             // #jogadaespecial en passant
             if (p is Peao && (destino.linha == origem.linha - 2 || destino.linha == origem.linha + 2))
             {
@@ -380,6 +376,5 @@ namespace Xadrez
             ColocarNovaPeca('g', 7, new Peao(Tab, Cor.Preta, this));
             ColocarNovaPeca('h', 7, new Peao(Tab, Cor.Preta, this));
         }
-
     }
 }
